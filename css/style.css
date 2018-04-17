@@ -19,13 +19,17 @@ light-yellow: #F5D76E;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 20px;
+  padding: 2rem;
 }
 
 /* End of Reset */
@@ -34,7 +38,11 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(245, 216, 110, 0.808), rgba(248, 147, 6, 0.801));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(245, 216, 110, 0.808),
+    rgba(248, 147, 6, 0.801)
+  );
   /* background-image: linear-gradient(to right bottom, rgba(245, 216, 110, 0.808), rgba(248, 147, 6, 0.801)), url(../img/halls.jpg); */
   background-size: cover;
   background-position: center;
@@ -46,12 +54,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: -20px;
-  left: 20px;
+  top: -4rem;
+  left: 4rem;
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 8rem;
 }
 
 .text__box {
@@ -67,14 +75,14 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .heading__primary__main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 45px;
+  letter-spacing: 4.5rem;
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -82,7 +90,7 @@ body {
 
 .heading__primary__sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 7.3px;
   animation-name: moveInRight;
@@ -144,22 +152,23 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
   display: inline-block;
   border-radius: 100px;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   /* this would give the button a pressed down feel */
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -172,12 +181,12 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .btn-white::after {
@@ -190,7 +199,7 @@ body {
 }
 
 .btn-animated {
-  animation: moveInBottom .4s ease-out .75s;
+  animation: moveInBottom 0.4s ease-out 0.75s;
   /* delays animation to stsrt from 0 opacity */
   animation-fill-mode: backwards;
 }
