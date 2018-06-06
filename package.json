@@ -1,0 +1,25 @@
+{
+  "name": "exploreunilag",
+  "version": "1.0.0",
+  "description": "Explore unilag page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ipaye/Xplore.git"
+  },
+  "keywords": [
+    "Xplore"
+  ],
+  "author": "Ipaye Alameen <Akinkunmi007@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ipaye/Xplore/issues"
+  },
+  "homepage": "https://github.com/Ipaye/Xplore#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
