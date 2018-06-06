@@ -1,0 +1,48 @@
+/* Animation on the header */
+
+@keyframes moveInLeft {
+	/* Start of animation */
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	80% {
+		transform: translateX(20px);
+	}
+	/* finish of animation */
+	100% {
+		opacity: 1;
+		transform: translate(0);
+		color: $color-white;
+	}
+}
+
+@keyframes moveInRight {
+	/* Start of animation */
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	80% {
+		transform: translateX(-20px);
+	}
+	/* finish of animation */
+	100% {
+		opacity: 1;
+		color: $color-white;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	/* Start of animation */
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	/* finish of animation */
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
