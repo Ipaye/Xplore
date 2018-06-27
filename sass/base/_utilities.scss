@@ -2,34 +2,37 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-	font-size: 62.5%;
-	/* 10/16px = 0.625 in percentage */
+  font-size: 62.5%;
+  /* 10/16px = 0.625 in percentage */
 }
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	/* font-size: 16px; */
-	line-height: 1.7;
-	color: $color-gray;
-	padding: 2rem;
-	box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-gray;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 /* End of Reset */
 
 .center-text {
-	text-align: center;
+  text-align: center;
 }
-.mb-8 {
-	margin-bottom: 8rem;
+.mb-large {
+  margin-bottom: 8rem;
 }
-.mb-4 {
-	margin-bottom: 4rem;
+.mb-medium {
+  margin-bottom: 4rem;
+}
+.mb-small {
+  margin-bottom: 1.5rem;
 }
