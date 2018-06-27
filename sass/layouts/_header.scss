@@ -1,25 +1,25 @@
 /* Start of header styling */
 .header {
-	height: 95vh;
-	background-image: linear-gradient(
-		to right bottom,
-		rgba($color-primary-light, 0.808),
-		rgba($color-primary-dark, 0.801)
-	);
-	/* background-image: linear-gradient(to right bottom, rgba(245, 216, 110, 0.808), rgba(248, 147, 6, 0.801)), url(../img/halls.jpg); */
-	background-size: cover;
-	background-position: center;
-	/* moving from left to right clockwise */
-	/* to get a triangle polygon(50% 0%, 25% 50%, 0% 100%, 100% 100%) */
-	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-	position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.808),
+      rgba($color-primary-dark, 0.801)
+    ),
+    url(../img/halls.jpg);
+  background-size: cover;
+  background-position: center;
+  /* moving from left to right clockwise */
+  /* to get a triangle polygon(50% 0%, 25% 50%, 0% 100%, 100% 100%) */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
 
-	&__logo-box {
-		position: absolute;
-		top: -2rem;
-		left: 2rem;
-	}
-	&__logo {
-		max-width: 8rem;
-	}
+  &__logo-box {
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+  }
+  &__logo {
+    max-width: 8rem;
+  }
 }
