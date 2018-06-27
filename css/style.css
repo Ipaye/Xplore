@@ -7,8 +7,7 @@
 /* Start of header styling */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(245, 215, 110, 0.808), rgba(248, 148, 6, 0.801));
-  /* background-image: linear-gradient(to right bottom, rgba(245, 216, 110, 0.808), rgba(248, 147, 6, 0.801)), url(../img/halls.jpg); */
+  background-image: linear-gradient(to right bottom, rgba(245, 215, 110, 0.808), rgba(248, 148, 6, 0.801)), url(../img/halls.jpg);
   background-size: cover;
   background-position: center;
   /* moving from left to right clockwise */
@@ -92,6 +91,31 @@
   /* delays animation to stsrt from 0 opacity */
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  color: #f89406;
+  text-decoration: none;
+  border-bottom: 1px solid #f89406;
+  padding: 1rem;
+  font-size: 1.6rem;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #f89406;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute; }
+
 /* Animation on the header */
 @keyframes moveInLeft {
   /* Start of animation */
@@ -129,6 +153,13 @@
     opacity: 1;
     transform: translate(0); } }
 
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
 .heading-primary {
   color: white;
   text-transform: uppercase;
@@ -164,12 +195,15 @@
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.content {
+  font-size: 1.6rem; }
+  .content:not(:last-child) {
+    margin-bottom: 3rem; }
 
 /* CSS Reset 🎈🎈🎈 */
 *,
@@ -196,8 +230,11 @@ body {
 .center-text {
   text-align: center; }
 
-.mb-8 {
+.mb-large {
   margin-bottom: 8rem; }
 
-.mb-4 {
+.mb-medium {
   margin-bottom: 4rem; }
+
+.mb-small {
+  margin-bottom: 1.5rem; }
