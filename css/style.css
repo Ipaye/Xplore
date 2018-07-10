@@ -20,9 +20,8 @@
   margin-top: -10rem; }
 
 .section-stories {
-  padding: 20rem 0 6rem 0;
-  background-color: #f7f7f7ea;
-  margin-top: -10rem; }
+  position: relative;
+  padding: 20rem 0 6rem 0; }
 
 /* Start of header styling */
 .header {
@@ -276,7 +275,7 @@
 .story {
   width: 75%;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 6rem;
   padding-left: 9rem;
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.15);
@@ -286,7 +285,6 @@
     height: 15rem;
     width: 15rem;
     float: left;
-    background-color: aquamarine;
     position: relative;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -296,15 +294,41 @@
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
-    color: white;
-    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase; }
+    color: white;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s ease;
+    backface-visibility: hidden; }
   .story__img {
-    width: 100%; }
+    width: 100%;
+    transform: scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.45;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 /* Animation on the header */
 @keyframes moveInLeft {
@@ -428,6 +452,15 @@ body {
 
 .mb-small {
   margin-bottom: 1.5rem; }
+
+.mt-large {
+  margin-top: 8rem; }
+
+.mt-medium {
+  margin-top: 4rem; }
+
+.mt-small {
+  margin-top: 1.5rem; }
 
 h2 {
   font-style: 20px; }
