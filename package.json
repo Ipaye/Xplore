@@ -21,6 +21,6 @@
 	},
 	"homepage": "https://github.com/Ipaye/Xplore#readme",
 	"devDependencies": {
-		"node-sass": "^4.9.0"
+		"node-sass": "^4.9.2"
 	}
 }

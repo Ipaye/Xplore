@@ -1,6 +1,7 @@
 /* Header button */
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -11,6 +12,9 @@
     border-radius: 100px;
     transition: all 0.2s;
     position: relative;
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
