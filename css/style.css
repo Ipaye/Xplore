@@ -120,11 +120,13 @@
 
 .navigation__nav {
   height: 100vh;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500; }
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s; }
 
 .navigation__background {
   width: 6.5rem;
@@ -134,8 +136,8 @@
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#f5d76e, #f89406);
-  z-index: 1000;
-  transform: scale(80); }
+  transition: all 0.8s;
+  z-index: 1000; }
 
 .navigation__button {
   width: 7rem;
@@ -153,7 +155,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .navigation__item {
   margin: 1rem; }
@@ -175,6 +178,13 @@
   color: #f89406;
   transform: translateX(1rem);
   background-position: 100%; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
 
 /* Header button */
 .btn, .btn:link, .btn:visited {
