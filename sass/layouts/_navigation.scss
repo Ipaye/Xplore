@@ -16,13 +16,14 @@
     transition: all 0.8s;
   }
   &__background {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 6.4rem;
+    height: 6.4rem;
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
+    transform: scale(0);
     transition: all 0.8s;
     z-index: 1000;
   }
@@ -35,6 +36,8 @@
     right: 6rem;
     background-color: $color-white;
     z-index: 2000;
+    text-align: center;
+    cursor: pointer;
   }
   &__list {
     position: absolute;
@@ -70,11 +73,63 @@
       background-position: 100%;
     }
   }
+
+  // Checkbox hack for navigation
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  // Navigation icon
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-black;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  // Navigation icon press functionality
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(135deg);
   }
 }
