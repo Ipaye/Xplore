@@ -45,8 +45,8 @@
   background-position: center;
   /* moving from left to right clockwise */
   /* to get a triangle polygon(50% 0%, 25% 50%, 0% 100%, 100% 100%) */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -598,7 +598,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
-    transition: all 0.5s 0.3s;
+    transition: all 0.4s 0.2s;
     width: 75%;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     background-color: white;

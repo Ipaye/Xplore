@@ -1,18 +1,13 @@
 /* Start of header styling */
 .header {
   height: 105vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.808),
-      rgba($color-primary-dark, 0.801)
-    ),
-    url(../img/halls.jpg);
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.808), rgba($color-primary-dark, 0.801)), url(../img/halls.jpg);
   background-size: cover;
   background-position: center;
   /* moving from left to right clockwise */
   /* to get a triangle polygon(50% 0%, 25% 50%, 0% 100%, 100% 100%) */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative;
 
   &__logo-box {
