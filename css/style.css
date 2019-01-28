@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/* 
+0   - 600 phone
+600 - 900  tablet potrait
+900 - 1200  Tablet landscape
+1200  - 1800 normal stylws
+1800 big screens
+*/
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
